@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.button{
+    font-size: 1.1rem;
+    font-family: 'JetBrains Mono', sans-serif;
+    font-weight: bold;
+    padding: 1rem;
+    background-color: rgba(50, 12, 220, 0.873);
+    color: white;
+    width: auto;
+    height: auto;
+    border: none;
+    border-radius: 1rem;
+    transition: transform 200ms ease;
+}
+
+.button:hover{
+    background-color: rgba(47, 14, 196, 0.774);
+}
+
+.button:active{
+    transform: scale(0.95);
+}
+
+#classBlock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+#colorBackground{
+    width: 150px;
+    height: 150px;
+    border: 1.5px solid black;
+    margin-bottom: 1rem;
+    border-radius: 2rem;
+}
+
+#saved{
+    width: 60px;
+    height: 60px;
+    border: 1.3px solid black;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+}
+
+#colorSave{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+#remove{
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 100%;
+    color: white;
+    background-color: brown;
+    margin: 0.2rem;
+}
+
+.saved-color {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    position: relative;
+    border: 1px solid #ddd;
+}
+
+.remove-color {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 20px;
+    padding: 0;
+}

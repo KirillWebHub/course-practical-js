@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    align-items: flex-end;
+    min-width: 100vw;
+    min-height: 100vh;
+    font-family: 'JetBrains Mono', sans-serif;
+}
+
+#slideBar {
+    width: 90%;
+    max-width: 500px; /* Фиксированная максимальная ширина */
+    margin: 20px auto; /* Центрирование */
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    background: #ffffff;
+    border-radius: 16px; /* Закругленные углы */
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.1), /* Внешняя тень */
+        inset 0 0 12px rgba(255, 255, 255, 0.3); /* Внутреннее свечение */
+    padding: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Тонкая прозрачная рамка */
+    backdrop-filter: blur(8px); /* Эффект матового стекла */
+    position: relative;
+    overflow: hidden;
+}
+
+#slideBar.active{
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, -55%);   
+}
+
+/* Декоративный градиентный фон (опционально) */
+#slideBar::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        45deg,
+        rgba(255, 255, 255, 0.1) 0%,
+        rgba(255, 255, 255, 0) 50%,
+        rgba(255, 255, 255, 0.1) 100%
+    );
+    transform: rotate(30deg);
+    z-index: -1;
+}
+
+/* Заголовок */
+#slideTitle {
+    margin: 0 0 15px 0;
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+    position: relative;
+}
+
+/* Подчеркивание заголовка (опционально) */
+#slideTitle::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+    margin: 10px auto 0;
+    border-radius: 3px;
+}
+
+/* Основной текст */
+#slideText {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    text-align: center;
+}
+
+

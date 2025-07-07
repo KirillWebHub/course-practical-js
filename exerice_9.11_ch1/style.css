@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+#content{
+    text-align: center;
+    width: 20%;
+    padding: 1rem;
+    margin: 1rem;
+    border: 2px solid black;
+}
+
+#link{
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+    border: 2px solid black;
+}
+
+#box{
+    text-align: center;
+    width: 20%;
+    padding: 1rem;
+    margin: 1rem;
+    border: 2px solid black;
+}
+
+#randomColor{
+    width: 20%;
+    height: 150px;
+    padding: 1rem;
+    margin: 1rem;
+    border: 2px solid black;
+}
+
+#removeDelete{
+    text-align: left;
+    width: 20%;
+    padding: 1rem;
+    margin: 1rem;
+    border: 2px solid black;  
+}

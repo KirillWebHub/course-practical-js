@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 100%;
+            min-width: 1300px;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #grandfather{
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+        }
+
+        #father{
+            width: 250px;
+            height: 250px;
+            border: 1px solid black;
+        }
+
+        #child{
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+        }
+
+        #baby{
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="grandfather">
+        <div id="father">
+            <div id="child">
+                <button id="baby">
+                    Нажми меня!
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    let grandfather = document.getElementById('grandfather');
+    let father = document.getElementById('father');
+    let child = document.getElementById('child');
+    let baby = document.getElementById('baby');
+
+    grandfather.addEventListener('click', function(){
+        
+        console.log('Я дедушка!');
+    })
+
+    father.addEventListener('click', function(){
+        console.log('Я отец!');
+    })
+
+    child.addEventListener('click', function(){
+        console.log('Я ребенок!');
+    })
+
+    baby.addEventListener('click', function(e){
+        e.stopPropagation()
+        console.log('Я малыш!');
+    })
+</script>
+</html>

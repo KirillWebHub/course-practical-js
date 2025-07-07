@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.button{
+    font-size: 1rem;
+    font-family: 'JetBrains Mono', sans-serif;
+    font-weight: bold;
+    padding: 0.7rem;
+    background-color: rgba(50, 12, 220, 0.873);
+    color: white;
+    width: auto;
+    height: auto;
+    border: none;
+    border-radius: 1rem;
+    transition: transform 200ms ease;
+}
+
+.button:hover{
+    background-color: rgba(47, 14, 196, 0.774);
+}
+
+.button:active{
+    transform: scale(0.95);
+}
+
+
+#inputData {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    color: #333; /* Темный текст для контраста */
+    font-size: 1.1rem;
+    font-family: 'JetBrains Mono', sans-serif;
+    width: 15vw;
+    height: 5vh;
+    background: linear-gradient(135deg, #f9f9f9 0%, #eee 100%);
+    border: 2px solid #ddd;
+    border-radius: 2rem;
+    box-shadow: 
+        0 2px 10px rgba(0, 0, 0, 0.08),
+        inset 0 1px 2px rgba(255, 255, 255, 0.9);
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+/* Состояние при фокусе */
+#inputData:focus {
+    border-color: #999;
+    background: linear-gradient(135deg, #fff 0%, #f5f5f5 100%);
+    box-shadow: 
+        0 4px 15px rgba(0, 0, 0, 0.1),
+        inset 0 1px 3px rgba(0, 0, 0, 0.05);
+    transform: translateY(-1px);
+}
+
+/* Плейсхолдер */
+#inputData::placeholder {
+    color: #aaa;
+    opacity: 1;
+    font-weight: 300;
+}
+
+/* Состояние при наведении */
+#inputData:hover {
+    border-color: #ccc;
+    box-shadow: 
+        0 3px 12px rgba(0, 0, 0, 0.12),
+        inset 0 1px 2px rgba(255, 255, 255, 0.95);
+}

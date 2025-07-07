@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.responsive-image {
+  /* Центрирование и ограничение ширины */
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  
+  /* Плавные эффекты */
+  transition: all 0.3s ease;
+}
+
+#adaptive-img {
+  /* Базовый размер для мобильных */
+  height: 200px;
+  width: auto;
+  
+  /* Автоматическое масштабирование */
+  max-width: 100%;
+  object-fit: contain;
+  
+  /* Современные тени */
+  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.1));
+  
+  /* Закругленные углы */
+  border-radius: 8px;
+  
+  /* Оптимизация загрузки */
+  display: block;
+  margin: 0 auto;
+}
+

@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#list{
+    list-style: none;
+    border: 1px solid gray;
+    border-bottom: none;
+
+}
+
+#list li{
+    font-size: 1.1rem;
+    font-family: 'JetBrains Mono', sans-serif;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid gray;
+}
+
+#list li:hover{
+    background-color: rgb(240, 237, 237);
+}
+
+.paragraph{
+    font-size: 1.1rem;
+    font-family: 'JetBrains Mono', sans-serif;
+    font-weight: bold;
+    padding: 1rem;
+}

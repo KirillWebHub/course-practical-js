@@ -16,14 +16,14 @@ body{
 
 .section_form{
     display: flex;
-    width: 50vw;
+    width: 60vw;
     height: auto;
     border-radius: 2rem;
+    overflow: hidden;  
 }
 
 .form_group, .image_form{
     width: 50%;
-    height: 100%;
 }
 
 .form_group{    
@@ -33,7 +33,6 @@ body{
     justify-content: center;
     background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
     padding: 2rem;
-    border-radius: 16px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
@@ -176,8 +175,8 @@ input[type="password"] {
 }
 
 .image{
+    border-radius: 0 2rem 2rem 0;
     width: 100%;  /* Изображение не будет превышать ширину контейнера */
     height: auto;     /* Сохраняет пропорции */
     display: block;   /* Убирает лишние отступы вокруг изображения */
-    border-radius: 1rem;
 }
